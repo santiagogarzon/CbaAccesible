@@ -64,24 +64,20 @@ const styles = {
         flexDirection: 'column',
         justifyContent: 'space-around'
     },
-
     headerTextStyle: {
         fontSize: 18
     },
-
     thumbnailStyle: {
         height: 50,
         width: 50,
         borderRadius:100
     },
-
     thumbnailContainerStyle: {
         justifyContent: 'center',
         alignItems: 'center',
         marginLeft: 10,
         marginRight: 10
     },
-
     imageStyle: {
         height: 300,
         flex: 1,

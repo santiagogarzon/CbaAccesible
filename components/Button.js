@@ -2,7 +2,6 @@ import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
 
 const Button = ({onPress, children}) => {
-
     const { buttonStyle, textStyle } = styles;
 
     return (
@@ -16,8 +15,8 @@ const Button = ({onPress, children}) => {
 
 const styles = {
     buttonStyle: {
-        flex: 1, //to expand
-        alignSelf: 'stretch', //stretch to fill the limits of the container
+        flex: 1,
+        alignSelf: 'stretch',
         backgroundColor: '#4A708B',
         borderRadius: 5,
         borderWidth: 1,
@@ -25,7 +24,6 @@ const styles = {
         marginLeft: 5,
         marginRight: 5
     },
-
     textStyle: {
         alignSelf: 'center',
         color: '#fff',
@@ -34,7 +32,6 @@ const styles = {
         paddingTop: 10,
         paddingBottom: 10
     }
-
 }
 
 export default Button;

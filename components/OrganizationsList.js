@@ -3,9 +3,7 @@ import { View } from 'react-native';
 import axios from 'axios';
 import OrganizationsDetail from './OrganizationsDetail';
 
-
 class OrganizationsList extends Component {
-
     state = { organizations : [] };
 
     componentWillMount() {
@@ -19,16 +17,13 @@ class OrganizationsList extends Component {
         );
     }
 
-
-
     render() {
-
-    return (
-        <View>
-          {this.renderOrganizations()}
-        </View>
-    );
-  }
+        return (
+            <View>
+            {this.renderOrganizations()}
+            </View>
+        );
+    }
 }
 
 export default OrganizationsList;

@@ -5,7 +5,6 @@ import EventsDetail from './EventsDetail';
 
 
 class EventsList extends Component {
-
     state = { events : [] };
 
     componentWillMount() {
@@ -19,10 +18,7 @@ class EventsList extends Component {
         );
     }
 
-
-
     render() {
-
     return (
         <View>
           {this.renderEvents()}
