@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, ImageBackground, Button } from 'react-native';
+import { StyleSheet, Text, View, Image, ImageBackground, Button, TouchableHighlight } from 'react-native';
 
 
 class Home extends React.Component  {
@@ -18,23 +18,40 @@ class Home extends React.Component  {
             width: '100%',
             height: '100%'
             }}
-        >
+        >   
             <View
-            style={{
+                style= {{
                     position: 'relative',
                     flex: 1,
-                    marginTop: 300,
-                    width: '100%',
-                    height: '100%',
+                    flexDirection: 'row',
                     alignItems: 'center',
                     justifyContent: 'center',
-            }}
+                    width: '100%',
+                    height: '100%'
+                }}
             >
-            <Button
-                onPress={() => this.props.navigation.navigate('Home')}
-                title="Ver Entidades"
-                
-            />
+                <TouchableHighlight activeOpacity={0} underlayColor='transparent' onPress={() => this.props.navigation.navigate('OrganizationsPage')}>
+                    <Image
+                        style={{
+                            position: 'relative',
+                            width: 100,
+                            height: 100,
+                            marginRight: 50
+                        }}
+                        source={require('./images/places.png')}
+                    />
+                </TouchableHighlight>
+
+                <TouchableHighlight activeOpacity={0} underlayColor='transparent' onPress={() => this.props.navigation.navigate('EventsPage')}>
+                    <Image
+                        style={{
+                            position: 'relative',
+                            width: 100,
+                            height: 100
+                        }}
+                        source={require('./images/event.png')}
+                    />
+                </TouchableHighlight>
             </View>
         </ImageBackground>
         <Image source={require('./images/logo_blanco_2.png')}
